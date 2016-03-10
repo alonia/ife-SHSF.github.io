@@ -45,63 +45,44 @@
 <body>
 	<!-- start fullPage menu -->
 	<ul id="menu">
-		<li data-menuanchor="firstPage">
-			<a href="#firstPage" target="_self"><!-- First slide --></a>
+		<li data-menuanchor="page1">
+			<a href="#page1" target="_self"><!-- First slide --></a>
 		</li>
-		<li data-menuanchor="secondPage">
-			<a href="#secondPage" target="_self"><!-- Second slide --></a>
+		<li data-menuanchor="page2">
+			<a href="#page2" target="_self"><!-- Second slide --></a>
 		</li>
-		<li data-menuanchor="thirdPage">
-			<a href="#thirdPage" target="_self"><!-- Third slide --></a>
+		<li data-menuanchor="page3">
+			<a href="#page3" target="_self"><!-- Third slide --></a>
 		</li>
-		<li data-menuanchor="fourthPage">
-			<a href="#fourthPage" target="_self"><!-- Fourth slide --></a>
+		<li data-menuanchor="page4">
+			<a href="#page4" target="_self"><!-- Fourth slide --></a>
 		</li>
-		<li data-menuanchor="fifthPage">
-			<a href="#fifthPage" target="_self"><!-- Fifth slide --></a>
+		<li data-menuanchor="page5">
+			<a href="#page5" target="_self"><!-- Fifth slide --></a>
 		</li>
-		<li data-menuanchor="sixthPage">
-			<a href="#sixthPage" target="_self"><!-- Sixth slide --></a>
+		<li data-menuanchor="page6">
+			<a href="#page6" target="_self"><!-- Sixth slide --></a>
 		</li>
-		<li data-menuanchor="seventhPage">
-			<a href="#seventhPage" target="_self"><!-- Seventh slide --></a>
+		<li data-menuanchor="page7">
+			<a href="#page7" target="_self"><!-- Seventh slide --></a>
 		</li>
 	</ul>
 	<!-- stop fullPage menu -->
 	
 	<!-- start main menu -->
 	<ul class="menu">
-		<li class="logo"><a href="" target=""></a></li>
-		<li><a href="" target=""></a></li>
-		<li><a href="" target=""></a></li>
-		<li><a href="" target=""></a></li>
-		<li><a href="" target=""></a></li>
+		<li class="logo">
+			<span></span>
+		</li>
+		<li class="github"><a href="https://github.com/ife-SHSF/">GitHub</a></li>
+		<li><a href="/ife-shsf.github.io/works.html" target="_self">作品</a></li>
+		<li><a class="menu-active" href="/ife-shsf.github.io/" target="_self">首页</a></li>
 	</ul>
 	<!-- stop main menu -->
 
 	<!-- start fullPage -->
 	<div id="fullpage">
-		<div class="section">
-			<h1>We are SHSF</h1>
-
-			<h2>为什么我们队名叫 SHSF?</h2>
-
-			<p>SHSF 是 "Stay hungry,stay foolish."的简写，它还有个美丽的中文名字：求知若饥，虚心若愚。多个版本的译文，我还是比较喜欢这个的！</p>
-
-			<p>不知道大家有没有看过乔老爷（史蒂夫·乔布斯）斯坦福大学毕业的演讲，没看过的大家可以去了解了解乔老爷（<a href="http://www.iqiyi.com/w_19rr1wt4j1.html" target="_blank">爱奇艺：史蒂夫·乔布斯在斯坦福大学的毕业演讲</a>）；相信大家看完后会更喜欢这句话。。。</p>
-
-			<h2>SHSF Members</h2>
-
-			<a href="https://github.com/AidanDai/" target="_blank">Github: AidanDai</a><br/>
-			<a href="https://github.com/zp1996/" target="_blank">Github: zp1996</a>
-			<br/>
-			<a href="https://github.com/alonia/" target="_blank">Github: alonia</a>
-			<br/>
-			<br/>
-			<br/>
-
-			<strong>愿参加百度前端技术学院的同学技术更进一步！最后感谢<a href="https://github.com/baidu-ife" target="_blank">@baidu-ife</a>为我们提供了这么好的机会！</strong>
-		</div>
+		<div class="section"></div>
 		<div class="section">Second section</div>
 		<div class="section">Third section</div>
 		<div class="section">Fourth section</div>
@@ -116,8 +97,8 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 		    $('#fullpage').fullpage({
-				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#ccddff', '#ccbbdd', '#ddbbaa', '#ffddcc'],
-				anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage'],
+				// sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#ccddff', '#ccbbdd', '#ddbbaa', '#ffddcc'],
+				anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
 				menu: '#menu',
 				scrollingSpeed: 1000
 			});

@@ -7,29 +7,91 @@
 
 /****************fullPage menu @AidanDai****************/
 #menu{
+	width: 22px;
+	height: 154px;
 	position:fixed;
 	top: 50%;
 	right: 0;
-	width: 22px;
-	height: 154px;
 	margin: -78px 25px 0 0;
 	z-index: 70;
 }
 #menu li{
-	float: left;
 	width: 22px;
 	height: 22px;
-	color: #000;
+	float: left;
 }
 #menu li a{
 	display: block;
 	width: 14px;
 	height: 14px;
 	margin: 7px;
-	border: 1px solid #fff;
+	border: 1px solid #666;
 	border-radius: 50%;
 }
 #menu li.active a{
-	background-color: #fff;
+	background-color: #666;
+}
+@media screen and (max-width: 768px){
+	#menu{
+		display: none;
+	}
 }
 /*/***************fullPage menu @AidanDai****************/
+
+/*****************main menu @AidanDai****************/
+.menu{
+	background-color: #4a4a4a;
+	height: 2.5rem;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 70;
+}
+.menu li{
+	padding: 0 10px;
+	height: 100%;
+	font-size: 15px;
+}
+.menu li.logo{
+	margin-left: 30px;
+	float: left;
+}
+.menu li{
+	float: right;
+}
+.menu li a{
+	display: block;
+	height: calc(100% - 15px);
+	width: calc(100% - 32px);
+	padding: 15px 16px 0;
+	color: #fff;
+}
+.menu li a.menu-active{
+	border-top: 4px solid #a9334c;
+	padding-top: 11px;
+}
+.menu li a:hover{
+	background-color: #222;
+}
+.logo span{
+	display: block;
+	width: 120px;
+	height: 40px;
+	margin-top: 10px;
+	background-image: url("../images/public.png");
+	background-position: 0 0; 
+	background-repeat: no-repeat;
+}
+.fp-viewing-page1 .menu{
+	background-color: transparent;
+}
+/*/***************main menu @AidanDai****************/
+
+/*****************page1 menu @AidanDai****************/
+.fp-viewing-page1 .section{
+	background-image: url("../images/page1-bg.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+/*/***************page1 menu @AidanDai****************/
