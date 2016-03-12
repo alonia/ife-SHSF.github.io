@@ -248,12 +248,13 @@
 	height: 300px;
 	margin: 2rem auto 1rem auto;
 }
-.team-thanks{
-	width: 486px;
+.team-thanks p{
+	width: 100%;
 	font-family: "宋体";
-	font-weight: 600;
-	font-size: 22px;
+	font-size: 30px;
 	margin: 0 auto;
+	text-align: center;
+	line-height: 1.5;
 	color: rgb(59, 61, 61);
 }
 .team-thanks p:nth-child(1){
