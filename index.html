@@ -40,6 +40,8 @@
 	<link rel="stylesheet" type="text/css" href="/ife-SHSF.github.io/assets/statics/fullPage.js/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="/ife-SHSF.github.io/assets/style/main.css"/>
 	<link rel="stylesheet" type="text/css" href="/ife-SHSF.github.io/assets/style/common.css"/>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="/ife-SHSF.github.io/assets/statics/fullPage.js/jquery.fullPage.js"></script>
 	<base target="_blank"/>
 </head>
 <body>
@@ -65,6 +67,9 @@
 		</li>
 		<li data-menuanchor="page7">
 			<a href="#page7" target="_self"><!-- Seventh slide --></a>
+		</li>
+		<li data-menuanchor="page8">
+			<a href="#page8" target="_self"><!-- Seventh slide --></a>
 		</li>
 	</ul>
 	<!-- stop fullPage menu -->
@@ -114,17 +119,52 @@
 		<div class="section">Fifth section</div>
 		<div class="section">Sixth section</div>
 		<div class="section">Seventh section</div>
+		<div class="section">
+			<div class="page8-box">
+				<div class="logo-canvas-box">
+					<canvas id="logo-canvas" width="300" height="300"></canvas>	
+				</div>
+				<div class="team-thanks">
+					<p>愿参加百度前端技术学院的同学们技术更近一步</p>
+					<p>最后感谢<a href="http://ife.baidu.com/" title="ife官网">@baidu-ife</a>为我们提供这么好的学习机会</p>
+				</div>
+				<div class="team-name">
+					S&nbsp;H&nbsp;S&nbsp;F
+					<span class="balck-dot">
+						<i class="dot">.</i>
+					</span>
+				</div>
+				<footer class="page-footer">
+					<p>
+						<a href="">baidu-ife</a>
+						<a href="">FEX</a>
+					</p>
+					<p>
+						<a href="https://github.com/AidanDai" title="AidanDai">AidanDai</a>
+						<a href="https://github.com/zp1996" title="zp1996">zp1996</a>
+						<a href="https://github.com/zhujian1995" title="GiantDwarf">GiantDwarf</a>
+						<a href="https://github.com/alonia" title="alonia">alonia</a>
+						<a href="http://weibo.com/5036767228" title="AidenJiang">AidenJiang</a>
+					</p>
+					<p>power by <a href="https://github.com/alvarotrigo/fullPage.js" title="fullpage">fullpage</a></p>
+				</footer>
+			</div>
+		</div>
 	</div>
 	<!-- start fullPage -->
-
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
-	<script type="text/javascript" src="/ife-SHSF.github.io/assets/statics/fullPage.js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="/ife-SHSF.github.io/assets/javascript/main.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 		    $('#fullpage').fullpage({
-				anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
+				anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
 				menu: '#menu',
-				scrollingSpeed: 1000
+				scrollingSpeed: 1000,
+				afterLoad: function (anchorLink, index) {
+					scrollFuns[anchorLink] ? scrollFuns[anchorLink]() : 1;
+				},
+				onLeave: function (index, nextIndex, direction) {
+					leaveFuns[index] ? leaveFuns[index]() : 1;
+				}
 			});
 		});
 	</script>
