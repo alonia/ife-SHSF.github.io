@@ -236,3 +236,144 @@
 	display: block;
 }
 /*/***************page3 @AidanDai****************/
+
+/*/***************page7 @zp****************/
+.page8-box{
+	width: 100%;
+	height: 100%;
+}
+.logo-canvas-box{
+	padding: 10px;
+	width: 300px;
+	height: 300px;
+	margin: 2rem auto 1rem auto;
+}
+.team-thanks{
+	width: 486px;
+	font-family: "宋体";
+	font-weight: 600;
+	font-size: 22px;
+	margin: 0 auto;
+	color: rgb(59, 61, 61);
+}
+.team-thanks p:nth-child(1){
+	text-indent: 12px;
+	margin-bottom: 10px;
+}
+.team-name{
+	width: 110px;
+	color: #171515;
+	font-size: 28px;
+	font-weight: 600;
+	margin: 2rem auto;
+	position: relative;
+	cursor: pointer;
+}
+.team-name:hover .balck-dot{
+	animation: moveShow 1.5s;
+	-moz-animation: moveShow 1.5s;
+	-webkit-animation: moveShow 1.5s;
+	-o-animation: moveShow 1.5s;
+}
+@-webkit-keyframes moveShow{
+	0%{
+		left: 24px;
+	}
+	20%{
+		left: 48px;
+	}
+	30%{
+		left: 48px;
+	}
+	50%{
+		left: 72px;
+	}
+	60%{
+		left: 72px;
+	}
+	90%{
+		left: 96px;
+	}
+	100%{
+		left: 96px;
+	}
+}
+@-moz-keyframes moveShow{
+	0%{
+		left: 24px;
+	}
+	20%{
+		left: 48px;
+	}
+	30%{
+		left: 48px;
+	}
+	50%{
+		left: 72px;
+	}
+	60%{
+		left: 72px;
+	}
+	90%{
+		left: 96px;
+	}
+	100%{
+		left: 96px;
+	}
+}
+@-o-keyframes moveShow{
+	0%{
+		left: 24px;
+	}
+	20%{
+		left: 48px;
+	}
+	30%{
+		left: 48px;
+	}
+	50%{
+		left: 72px;
+	}
+	60%{
+		left: 72px;
+	}
+	90%{
+		left: 96px;
+	}
+	100%{
+		left: 96px;
+	}
+}
+.balck-dot{
+	position: absolute;
+	left: 24px;
+	top: -1px;
+	width: 100px;
+	display: inline-block;
+	background: rgb(240, 244, 247);
+}
+.dot{
+	font-size: 30px;
+}
+.page-footer{
+	position: absolute;
+	bottom: 0px;
+	background: rgb(59, 61, 61);;
+	width: 100%;
+	height: 100px;
+	color: #fff;
+}
+.page-footer p{
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 14px;
+}
+.page-footer a{
+	color: #fff;
+	margin-left: 5px;
+}
+.page-footer a:hover{
+	text-decoration: underline;
+}
+/*/***************page7 @zp****************/
