@@ -82,7 +82,7 @@ function canvasRound (context, fn, prev) {
 		}
 		start += 1;
 		fn(context, draw);
-	}, 19);
+	}, 7);
 }
 
 /**
