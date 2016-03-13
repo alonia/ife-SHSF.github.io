@@ -1,28 +1,71 @@
 /**
- * 获取DOM节点元素
+ * SHSF团队构造函数
  * @param  object obj exp:{id:"menu"}
- * @return array exp:ul
+ * @return obejct S
+ * @AidanDai
  */
-function getE(obj){
-	return elements;
+var SHSF = function(obj){
+	var element = null;
+
+	/**
+	 * 不能new，new会是SHSF.prototype.init()成为构造函数
+	 * 如果new就阻断了SHSF原型与Object原型之间的直接继承关系
+	 */
+	//return new S.prototype.init(); //原型链见图1
+	return S.prototype.init(); // 原型链见图2
 }
+var S = SHSF;  //简化构造函数指针
+
+/**
+ * SHSF团队初始化函数
+ * @param  object obj exp:{id:"menu"}
+ * @return obejct S
+ * @AidanDai
+ */
+S.prototype.init = function(){
+	return this;
+}
+
 /**
  * 添加class属性
- * @param object element DOM节点元素
- * @return boolean true/flase
+ * @param  string className
+ * @return obejct S
+ * @AidanDai
  */
-function addClass(element){
-	return result;
+S.prototype.addClass = function(className){
+	return this;
 }
+
 /**
- * 判断是否有class
- * @param object element DOM节点元素
- * @param string strClass class
- * @return Boolean [description]
+ * 清除某个class属性
+ * @param  string className
+ * @return obejct S
+ * @AidanDai
  */
-function hasClass(element, strClass){
-	return result;
+S.prototype.delClass = function(className){
+	return this;
 }
+
+/**
+ * 判断是否有某个class
+ * @param  string className
+ * @return obejct S
+ * @AidanDai
+ */
+S.prototype.hasClass = function(className){
+	return this;
+}
+
+/**
+ * 特定功能：根据URL处理顶部高亮导航
+ * @param  string className
+ * @return obejct S
+ * @AidanDai
+ */
+S.prototype.URL = function(){
+	return this;
+}
+
 /**
  * 处理animation兼容性
  * @param  string 待设置的值
@@ -172,7 +215,7 @@ var cancelNameFun = function () {
  */
 var scrollFuns = (function () {
 	return {
-		"page8": seventhPage["in"]
+		"page4": seventhPage["in"]
 	};
 })();
 
@@ -184,7 +227,7 @@ var scrollFuns = (function () {
  */
 var leaveFuns = function () {
 	return {
-		8: function () {
+		4: function () {
 			seventhPage["out"]();
 			cancelNameFun.forEach(function (val) {
 				val();
