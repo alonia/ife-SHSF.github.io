@@ -15,5 +15,8 @@ SHSF 是 "Stay hungry,stay foolish."的简写，它还有个美丽的中文名�
 
 [Github: alonia](https://github.com/alonia/)
 
+[Github: GiantDrawf](https://github.com/GiantDrawf)
+
+[微博：AidenJiang](http://weibo.com/u/5036767228)
 
 愿参加百度前端技术学院的同学技术更进一步！最后感谢[@baidu-ife](https://github.com/baidu-ife)为我们提供了这么好的机会！
