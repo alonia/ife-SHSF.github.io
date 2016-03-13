@@ -6,23 +6,59 @@
  */
 var SHSF = function(obj){
 	var element = null;
-
+	var temp = null;
 	/**
 	 * 不能new，new会使SHSF.prototype.init()成为构造函数
 	 * 如果new就阻断了SHSF原型与Object原型之间的直接继承关系
 	 */
 	//return new S.prototype.init(); //原型链见图1
-	return S.prototype.init(); // 原型链见图2
+	return S.prototype.init(obj); // 原型链见图2
 }
 var S = SHSF;  //简化构造函数指针
 
 /**
- * SHSF团队初始化函数
+ * SHSF团队初始化函数,简单实现选择器
  * @param  object obj exp:{id:"menu"}
  * @return obejct S
  * @AidanDai
  */
-S.prototype.init = function(){
+S.prototype.init = function(obj){
+	try{
+		if(Object.keys(obj).length > 1){
+			throw new Error("arguments is not valid!");
+		}else{
+			var propertys = Object.getOwnPropertyNames(obj)
+			var property = propertys[0].toLowerCase();
+			switch(property){
+				case "id":
+					this.element = document.getElementById(obj[property]);
+					break;
+				case "class":
+					this.element = document.getElementsByClassName(obj[property]);
+					break;
+				case "name":
+					this.element = document.getElementsByName(obj[property]);
+					break;
+				case "tagname":
+					this.element = document.getElementsByTagName(obj[property]);
+					break;
+				default:
+					;
+			}
+		}
+	}catch(e){
+		console.error(e);
+	}
+	return this;
+}
+
+/**
+ * 判断是否有某个class
+ * @param  string className
+ * @return obejct S
+ * @AidanDai
+ */
+S.prototype.hasClass = function(className){
 	return this;
 }
 
@@ -47,22 +83,25 @@ S.prototype.delClass = function(className){
 }
 
 /**
- * 判断是否有某个class
- * @param  string className
+ * 遍历DOM数组节点	
+ * @param  object obj exp:{id:"menu"}
  * @return obejct S
  * @AidanDai
  */
-S.prototype.hasClass = function(className){
-	return this;
-}
-
-/**
- * 特定功能：根据URL处理顶部高亮导航
- * @param  string className
- * @return obejct S
- * @AidanDai
- */
-S.prototype.URL = function(){
+S.prototype.each = function(callback, args){
+	// try{
+		
+		// if(String.prototype.indexOf(Object.prototype.toString.apply(this.element), "object")){
+		// 	throw new Error("S.each() is only foreach Array!");
+		// }else{
+			var len = Object.keys(this.element).length;
+			for(var i=0;i<len;i++){
+				callback.call(this.element[i], this, i, this.element[i], args);
+			}
+	// 	}
+	// }catch(e){
+	// 	console.error(e);
+	// }
 	return this;
 }
 
