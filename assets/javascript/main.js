@@ -117,6 +117,50 @@ function compatibleAnimation (dom, value) {
 	dom.style.MozAnimation = value;
 	dom.style.OAnimation = value;
 }
+
+/**
+ * 处理第三页逻辑
+ * @param  null
+ * @return void 0
+ * @author zp
+ */
+var threeFuns = function () {
+	var cache = document.getElementsByClassName("skills"),
+		logos = document.getElementsByClassName("member-logo"),
+		masks = document.getElementsByClassName("member-mask"),
+		infos = document.getElementsByClassName("member-info"),
+		prevNameArr = [" wq-", " zp-", " wyt-", " zj-", " jhy-"],
+		oldNameArr = [" one-skill", " two-skill", " three-skill", " four-skill", " five-skill"],
+		lastNameArr = ["one", "two", "three", "four", "five"];
+	for (var i = 0, len = logos.length; i < len; i++) {
+		logos[i].onmouseover = function (num) {
+			return function () {
+				for (var i = num * 5, j = 0; j < 5; i++,j++) {
+					cache[i].style.display = "block";
+					cache[i].className += prevNameArr[num] + lastNameArr[j];
+					if (j === num) {
+						infos[j].style.display = "block";
+					} else {
+						masks[j].style.display = "block";
+					}
+				}
+			}
+		}(i);
+		logos[i].onmouseout = function (num) {
+			return function () {
+				for (var i = num * 5, j = 0; j < 5; i++,j++) {
+					cache[i].style.display = "none";
+					cache[i].className = "skills" + oldNameArr[j];
+					if (j === num) {
+						infos[j].style.display = "none";
+					} else {
+						masks[j].style.display = "none";
+					}
+				}
+			}
+		}(i);
+	}
+}();
 /*
 全局变量
 */
