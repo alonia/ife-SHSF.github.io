@@ -8,7 +8,7 @@ var SHSF = function(obj){
 	var element = null;
 
 	/**
-	 * 不能new，new会是SHSF.prototype.init()成为构造函数
+	 * 不能new，new会使SHSF.prototype.init()成为构造函数
 	 * 如果new就阻断了SHSF原型与Object原型之间的直接继承关系
 	 */
 	//return new S.prototype.init(); //原型链见图1
