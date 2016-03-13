@@ -114,13 +114,16 @@
 	top: -250px;
 	left: 50%;
 	margin-left: -125px;
-	transition:top 1s ease-in;
+	transition:top 1s ease-in-out;
+	-webkit-transition:top 1s ease-in-out;
+	-moz-transition:top 1s ease-in-out;
+	transition:top 1s ease-in-out;
 }
-.fp-viewing-page1 .page1-title{
+.active .page1-title{
 	top: 25%;
-	/*-webkit-transition:left 2.5s ease-in-out;
-	-moz-transition:background-color 2.5s ease-in-out;*/
-	transition:top 1s ease-in;
+	-webkit-transition:top 1s ease-in-out;
+	-moz-transition:top 1s ease-in-out;
+	transition:top 1s ease-in-out;
 }
 .page1-box p{
 	width: 80%;
