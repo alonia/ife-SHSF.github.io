@@ -138,7 +138,7 @@
 	position: relative;
 	width: 863px;
 	height: 25px;
-	top: 60%;
+	top: 72%;
 	margin: 0 auto;
 	opacity: 0;
 	transform: scale(0, 0);
@@ -228,7 +228,7 @@
 	transition-delay: 0.2s;
 }
 .active .page2-bg{
-	bottom: 6rem;
+	bottom: 4rem;
 	transition: all 1.7s;
 }
 .page2-line{
@@ -245,7 +245,7 @@
 }
 .active .page2-line{
 	opacity: 1;
-	bottom: calc(6rem - 16px);
+	bottom: calc(4rem - 16px);
 	transition: all 1.7s;
 }
 /*/***************page2 @AidanDai****************/
