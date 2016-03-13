@@ -630,8 +630,8 @@
 	left: 0;
 }
 .member-info{
-	background-color: #aaa;
-	opacity: 0.45;
+	background-color: #2f2f2f;
+	opacity: 0.6;
 	color: #fff;
 }
 .member-mask{
@@ -733,6 +733,11 @@
 .team-thanks p:nth-child(1){
 	text-indent: 12px;
 	margin-bottom: 10px;
+}
+.team-thanks a{
+	color: #005186;
+	text-decoration: underline;
+	font-family: "宋体";
 }
 .team-name{
 	position: absolute;
