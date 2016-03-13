@@ -278,12 +278,12 @@
 	position: relative;
 	cursor: pointer;
 }
-.team-name:hover .balck-dot{
+/*.team-name:hover .balck-dot{
 	animation: moveShow 0.75s;
 	-moz-animation: moveShow 0.75s;
 	-webkit-animation: moveShow 0.75s;
 	-o-animation: moveShow 0.75s;
-}
+}*/
 @-webkit-keyframes moveShow{
 	0%{
 		left: 24px;

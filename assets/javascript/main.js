@@ -23,6 +23,18 @@ function addClass(element){
 function hasClass(element, strClass){
 	return result;
 }
+/**
+ * 处理animation兼容性
+ * @param  string 待设置的值
+ * @return void 0
+ * @author zp
+ */
+function compatibleAnimation (dom, value) {
+	dom.style.animation = value;
+	dom.style.WebkitAnimation = value;
+	dom.style.MozAnimation = value;
+	dom.style.OAnimation = value;
+}
 /*
 全局变量
 */
@@ -124,6 +136,35 @@ var seventhPage = (function () {
 })();
 
 /**
+ * 操作队名,固定定时时间为0.75,moveShow为运动的函数名
+ * @param  null
+ * @return obj
+ * @author zp
+ */
+var cancelNameFun = function () {
+	var teamNames = document.getElementsByClassName("team-name"),
+		dots = document.getElementsByClassName("balck-dot"),
+		funArr = [];   /*切换该屏幕后,将样式重置函数数组*/
+	for (var i = 0, len = teamNames.length; i < len; i++) {
+		teamNames[i].onmouseover = (function (num) {
+			funArr.push(function () {
+				setTimeout(function () {
+					compatibleAnimation(dots[num], "");
+					dots[num].style.left = "24px";
+				}, 200);
+			});
+			return function () {
+				compatibleAnimation(dots[num], "moveShow 0.75s");
+				setTimeout(function () {
+					dots[num].style.left = "96px";
+				}, 750);
+			};
+		})(i);
+		teamNames[i].onmouseout = function () {};
+	}
+	return funArr;
+}();
+/**
  * 进入一屏幕时的操作函数
  * @param  null
  * @return obj
@@ -145,6 +186,9 @@ var leaveFuns = function () {
 	return {
 		8: function () {
 			seventhPage["out"]();
+			cancelNameFun.forEach(function (val) {
+				val();
+			});
 		}
 	};
 }();
