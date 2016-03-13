@@ -252,11 +252,10 @@
 
 /*/***************page3 animation @zp****************/
 .skills{
-	/*display: none;*/
+	display: none;
 	width: 80px;
 	height: 110px;
 	position: absolute;
-	/*position: relative;*/
 	z-index: 10000;
 }
 .pie-left, .pie-right{
@@ -406,6 +405,46 @@
 	color: rgb(82, 201, 171);
 }
 /*个人技能值设定*/
+.wq-one .left{
+	transform: rotate(360deg);
+	animation: precent-five 0.5s;
+	background: rgb(89, 186, 255);
+}
+.wq-one .right{
+	transform: rotate(270deg);
+	animation: precent-seven-half 1s;
+	background: rgb(89, 186, 255);
+}
+.wq-two .left{
+	transform: rotate(360deg);
+	animation: precent-five 0.5s;
+	background: rgb(204, 121, 191);
+}
+.wq-two .right{
+	transform: rotate(270deg);
+	animation: precent-seven-half 1s;
+	background: rgb(204, 121, 191);
+}
+.wq-three .left{
+	transform: rotate(360deg);
+	animation: precent-five 0.5s;
+	background: rgb(249, 111, 89);
+}
+.wq-three .right{
+	transform: rotate(300deg);
+	animation: precent-eight 1s;
+	background: rgb(249, 111, 89);
+}
+.wq-four .left{
+	transform: rotate(360deg);
+	animation: precent-five 0.8s;
+	background: rgb(251, 174, 60);
+}
+.wq-five .left{
+	transform: rotate(330deg);
+	animation: precent-four 0.8s;
+	background: rgb(82, 201, 171);
+}
 .zp-one .left{
 	transform: rotate(360deg);
 	animation: precent-five 0.5s;
