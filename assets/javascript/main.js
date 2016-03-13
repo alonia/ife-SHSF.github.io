@@ -133,7 +133,7 @@ function canvasRound (context, fn, prev) {
 		context.clearRect(0, 0, 500, 500);
 		if (prev && prev.start <= 270) {
 			prev.start += 1;
-			prev.fun(160, 175, 100, context);
+			prev.fun(150, 150, 100, context);
 		}
 		start += 1;
 		fn(context, draw);
@@ -156,9 +156,9 @@ var seventhPage = (function () {
 				img.src = "/ife-SHSF.github.io/assets/images/logo.png";
 				if (img.complete) {
 					function showImg () {
-						context.drawImage(img, 100, 100, 120, 150);
+						context.drawImage(img, 90, 75, 120, 150);
 					}
-					fn(showImg, 4, [59, 61, 61], 160, 175, 100);
+					fn(showImg, 4, [59, 61, 61], 150, 150, 100);
 				}
 				img.onerror = function () {
 					alert("logo加载失败");

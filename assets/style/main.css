@@ -250,6 +250,304 @@
 }
 /*/***************page2 @AidanDai****************/
 
+/*/***************page3 animation @zp****************/
+.skills{
+	/*display: none;*/
+	width: 80px;
+	height: 110px;
+	position: absolute;
+	/*position: relative;*/
+	z-index: 10000;
+}
+.pie-left, .pie-right{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.left, .right{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	position: absolute;
+}
+.left, .pie-left{
+	clip: rect(0, 80px, 80px, 40px);
+}
+.right, .pie-right{
+	clip: rect(0, 40px, 80px, 0);
+}
+.skill-name{
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+}
+.percent{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	margin: 10px;
+	font-weight: 600;
+	background: #fff;
+	text-align: center;
+	line-height: 60px;
+	z-index: 10000;
+	position: relative;
+}
+.unique-skill{
+	position: relative;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+}
+/*百分比动画*/
+@keyframes precent-five{
+	from{
+		transform: rotate(180deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+@keyframes precent-four{
+	from{
+		transform: rotate(180deg);
+	}
+	to{
+		transform: rotate(330deg);
+	}
+}
+@keyframes precent-three{
+	from{
+		transform: rotate(180deg);
+	}
+	to{
+		transform: rotate(300deg);
+	}
+}
+@keyframes precent-seven{
+	0%{
+		transform: rotate(180deg);
+	}
+	50%{
+		transform: rotate(180deg);
+	}
+	100%{
+		transform: rotate(240deg);
+	}
+}
+@keyframes precent-seven-half{
+	0%{
+		transform: rotate(180deg);
+	}
+	50%{
+		transform: rotate(180deg);
+	}
+	100%{
+		transform: rotate(270deg);
+	}
+}
+@keyframes precent-eight{
+	0%{
+		transform: rotate(180deg);
+	}
+	50%{
+		transform: rotate(180deg);
+	}
+	100%{
+		transform: rotate(300deg);
+	}
+}
+.one-skill .unique-skill{
+	background: rgb(69, 114, 167);
+}
+.one-skill .skill-name{
+	color: rgb(89, 186, 255);
+}
+.one-skill .percent{
+	color: #16CCEA;
+}
+.two-skill .unique-skill{
+	background: rgb(135, 86, 179);
+}
+.two-skill .skill-name{
+	color: rgb(204, 121, 191);
+}
+.two-skill .percent{
+	color: rgb(204, 121, 191);
+}
+.three-skill .unique-skill{
+	background: rgb(154, 88, 48);
+}
+.three-skill .skill-name{
+	color: rgb(249, 111, 89);
+}
+.three-skill .percent{
+	color: rgb(249, 111, 89);
+}
+.four-skill .unique-skill{
+	background: rgb(117, 97, 19);
+}
+.four-skill .skill-name{
+	color: rgb(251, 174, 60);
+}
+.four-skill .percent{
+	color: rgb(251, 174, 60);
+}
+.five-skill .unique-skill{
+	background: rgb(13, 99, 86);
+}
+.five-skill .skill-name{
+	color: rgb(82, 201, 171);
+}
+.five-skill .percent{
+	color: rgb(82, 201, 171);
+}
+/*个人技能值设定*/
+.zp-one .left{
+	transform: rotate(360deg);
+	animation: precent-five 0.5s;
+	background: rgb(89, 186, 255);
+}
+.zp-one .right{
+	transform: rotate(270deg);
+	animation: precent-seven-half 1s;
+	background: rgb(89, 186, 255);
+}
+.zp-two .left{
+	transform: rotate(360deg);
+	animation: precent-five 0.5s;
+	background: rgb(204, 121, 191);
+}
+.zp-two .right{
+	transform: rotate(270deg);
+	animation: precent-seven-half 1s;
+	background: rgb(204, 121, 191);
+}
+.zp-three .left{
+	transform: rotate(360deg);
+	animation: precent-five 0.5s;
+	background: rgb(249, 111, 89);
+}
+.zp-three .right{
+	transform: rotate(300deg);
+	animation: precent-eight 1s;
+	background: rgb(249, 111, 89);
+}
+.zp-four .left{
+	transform: rotate(360deg);
+	animation: precent-five 0.8s;
+	background: rgb(251, 174, 60);
+}
+.zp-five .left{
+	transform: rotate(330deg);
+	animation: precent-four 0.8s;
+	background: rgb(82, 201, 171);
+}
+.wyt-one .left{
+	transform: rotate(300deg);
+	animation: precent-three 1s;
+	background: rgb(89, 186, 255);
+}
+.wyt-two .left{
+	transform: rotate(360deg);
+	animation: precent-five 1s;
+	background: rgb(204, 121, 191);
+}
+.wyt-three .left{
+	transform: rotate(360deg);
+	animation: precent-five 0.5s;
+	background: rgb(249, 111, 89);
+}
+.wyt-three .right{
+	transform: rotate(240deg);
+	animation: precent-seven 1s;
+	background: rgb(249, 111, 89);
+}
+.wyt-four .left{
+	transform: rotate(330deg);
+	animation: precent-four 1s;
+	background: rgb(251, 174, 60);
+}
+.wyt-five .left{
+	transform: rotate(330deg);
+	animation: precent-four 1s;
+	background: rgb(82, 201, 171);
+}
+.zj-one .left{
+	transform: rotate(360deg);
+	animation: precent-five 1s;
+	background: rgb(89, 186, 255);
+}
+.zj-two .left{
+	transform: rotate(360deg);
+	animation: precent-five 0.5s;
+	background: rgb(204, 121, 191);
+}
+.zj-two .right{
+	transform: rotate(270deg);
+	animation: precent-seven-half 1s;
+	background: rgb(204, 121, 191);
+}
+.zj-three .left{
+	transform: rotate(360deg);
+	animation: precent-five 0.5s;
+	background: rgb(249, 111, 89);
+}
+.zj-three .right{
+	transform: rotate(270deg);
+	animation: precent-seven-half 1s;
+	background: rgb(249, 111, 89);
+}
+.zj-four .left{
+	transform: rotate(300deg);
+	animation: precent-three 1s;
+	background: rgb(251, 174, 60);
+}
+.zj-five .left{
+	transform: rotate(300deg);
+	animation: precent-three 1s;
+	background: rgb(82, 201, 171);
+}
+.jhy-one .left{
+	transform: rotate(360deg);
+	animation: precent-five 0.5s;
+	background: rgb(89, 186, 255);
+}
+.jhy-one .right{
+	transform: rotate(240deg);
+	animation: precent-seven 1s;
+	background: rgb(89, 186, 255);
+}
+.jhy-two .left{
+	transform: rotate(360deg);
+	animation: precent-five 1s;
+	background: rgb(204, 121, 191);
+}
+.jhy-three .left{
+	transform: rotate(360deg);
+	animation: precent-five 0.5s;
+	background: rgb(249, 111, 89);
+}
+.jhy-three .right{
+	transform: rotate(240deg);
+	animation: precent-seven 1s;
+	background: rgb(249, 111, 89);
+}
+.jhy-four .left{
+	transform: rotate(300deg);
+	animation: precent-three 1s;
+	background: rgb(251, 174, 60);
+}
+.jhy-five .left{
+	transform: rotate(300deg);
+	animation: precent-three 1s;
+	background: rgb(82, 201, 171);
+}
+/*/***************page3 animation @zp****************/
+
 /*/***************page3 @AidanDai****************/
 .page3-box{
 	width: 100%;
@@ -271,27 +569,36 @@
 	top: 30%;
 }
 .member-logo{
+	position: relative;
 	float: left;
 	width: 10rem;
 	height: 10rem;
 	margin: 0 2rem;
 }
 .page3-box img,
-.member-info{
+.member-info,
+.member-mask{
 	display: block;
 	width: 10rem;
 	height: 10rem;
 	border-radius: 50%;
 	cursor: pointer;
 }
-.member-info{
+.member-info,
+.member-mask{
 	display: none;
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+.member-info{
 	background-color: #aaa;
 	opacity: 0.65;
 	color: #fff;
+}
+.member-mask{
+	background-color: rgb(239, 239, 239);
+	opacity: 0.9;
 }
 .member-info h1,
 .member-info h2,
@@ -313,6 +620,47 @@
 }
 .m-i-active:hover{
 	display: block;
+}
+.zp-one,
+.wq-one,
+.wyt-one,
+.zj-one,
+.jhy-one{
+	top: -30px;
+	left: 172px;
+}
+.zp-two,
+.wq-two,
+.wyt-two,
+.zj-two,
+.jhy-two{
+	top: 103px;
+	left: 195px;
+}
+.zp-three,
+.wq-three,
+.wyt-three,
+.zj-three,
+.jhy-three{
+	top: 202px;
+	left: 64px;
+}
+.zp-four,
+.wq-four,
+.wyt-four,
+.zj-four,
+.jhy-four
+{
+	top: 103px;
+	left: -77px;
+}
+.zp-five,
+.wq-five,
+.wyt-five,
+.zj-five,
+.jhy-five{
+	top: -30px;
+	left: -53px;
 }
 /*/***************page3 @AidanDai****************/
 
@@ -359,12 +707,6 @@
 	margin-left: -20px;
 	cursor: pointer;
 }
-/*.team-name:hover .balck-dot{
-	animation: moveShow 0.75s;
-	-moz-animation: moveShow 0.75s;
-	-webkit-animation: moveShow 0.75s;
-	-o-animation: moveShow 0.75s;
-}*/
 @-webkit-keyframes moveShow{
 	0%{
 		left: 24px;
