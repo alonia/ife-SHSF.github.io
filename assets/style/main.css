@@ -178,7 +178,7 @@
 }
 .page2-box h1{
 	position: relative;
-	top: 6rem;
+	top: 5rem;
 	text-align: center;
 	font-size: 32px;
 	font-family: "宋体";
@@ -191,9 +191,8 @@
 }
 .page2-box p{
 	position: relative;
-	top: 8rem;
+	top: 6rem;
 	width: 50rem;
-	margin-left: -25rem;
 	text-indent: 2rem;
 	line-height: 1.5;
 	margin: 0 auto;
@@ -601,11 +600,11 @@
 }
 .member-top{
 	width: 28rem;
-	top: 20%;
+	top: 18%;
 }
 .member-bottom{
 	width: 42rem;
-	top: 30%;
+	top: 15%;
 }
 .member-logo{
 	position: relative;
@@ -719,7 +718,7 @@
 }
 .team-thanks{
 	position: absolute;
-	bottom: 24%;
+	bottom: 30%;
 	width: 100%;
 }
 .team-thanks p{
@@ -738,7 +737,7 @@
 .team-name{
 	position: absolute;
 	left: 50%;
-	bottom: 16%;
+	bottom: 20%;
 	width: 110px;
 	color: #171515;
 	font-size: 28px;
