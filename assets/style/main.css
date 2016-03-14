@@ -192,7 +192,7 @@
 .page2-box p{
 	position: relative;
 	top: 6rem;
-	width: 50rem;
+	padding: 0 20%;
 	text-indent: 2rem;
 	line-height: 1.5;
 	margin: 0 auto;
