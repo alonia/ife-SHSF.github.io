@@ -1,0 +1,51 @@
+body{
+	margin: 0;
+	padding: 20px;
+}
+div{
+	border: 1px solid #999;
+	padding: 20px;
+}
+.content{
+	background-color: #eee;
+	overflow: hidden;
+}
+.team-logo{
+	width: 160px;
+	float: left;
+}
+.team-logo img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	margin-right: 20px;
+}
+.team-logo h1{
+	float: left;
+	font-size: 20px;
+}
+.team-introduce{
+	line-height: 1.5;
+	margin: 0 142px  0 222px;
+}
+.content div.team-member{
+	float: right;
+	width: 80px;
+}
+.team-member img{
+	width: 80px;
+	height: 80px;
+	border: 1px solid #999;
+	float: left;
+	margin-bottom: 20px;
+}
+.team-member img:last-child{
+	margin-bottom: 0;
+}
+.content .member-info{
+	border: none;
+}
+.member-info a{
+	display: block;
+	line-height: 1.5;
+}
