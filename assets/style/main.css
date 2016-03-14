@@ -852,3 +852,22 @@
 	text-decoration: underline;
 }
 /*/***************page4 @zp****************/
+
+.work-list{
+	width: 60%;
+	padding: 0 20%;
+	margin: 120px auto 120px;
+	background-color: #efefef;
+}
+.work-list h1{
+	font-size: 32px;
+	font-family: "宋体";
+}
+.work-list a{
+	display: block;
+	margin: 10px 0;
+	padding-left: 30px;
+	line-height: 1.5;
+	font-size: 20px;
+	font-family: "宋体";
+}
