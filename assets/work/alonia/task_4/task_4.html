@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定位和居中</title>
+	<style type="text/css">
+	body{
+		margin:0;
+	}
+      .content{
+      	width:400px;
+      	height:200px;
+      	background:#ccc;
+      	 position:absolute;  
+        left:50%;  
+        top:50%;
+        margin:-100px 0 0 -200px ;
+      }
+      .top_circle{
+      background: yellow;
+      width: 50px;
+      height: 50px;
+      border-radius: 0 0 50px 0;
+      overflow: hidden;
+
+      }
+      .bottom_circle{
+       background: yellow;
+       width: 50px;
+       height: 50px;
+       border-radius: 50px 0 0 0;
+       position: relative;
+       left: 350px;
+       top: 100px;
+      }
+ 
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="top_circle"></div>
+		<div class="bottom_circle"></div>
+		
+	</div>
+	
+</body>
+</html>
