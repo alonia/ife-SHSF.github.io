@@ -1,0 +1,129 @@
+*{
+	margin:0;
+	padding: 0;
+}
+header{
+	width:100%;
+	height:54px;
+	background:#2289BF;
+}
+header .logo{
+	width:37px;
+	height:35px;
+	background:#ffffff;
+	margin-top:10px;
+	margin-left:50px;
+	float:left;
+}
+header .login{
+	float:right;
+	margin-right:100px;
+	color:white;
+}
+.login input
+{
+	width:313px;
+	height:29px;
+	margin-top:15px;
+	border-radius:40px;
+	border:0;
+}.login p{
+	display:inline-block;
+	background:url(images/task_9_search.jpg);
+	width:20px;
+	height:18px;
+	position:relative;
+	top:5px;
+	right:300px;
+}
+.login span{
+	display:inline-block;
+	width:60px;
+	height:20px;
+	margin-left:20px;
+	text-align:right;
+	background:url(images/task_9_login.jpg);
+	background-repeat:no-repeat;
+}
+.left{
+	width:260px;
+	background:#2a2e3d;
+	color:white;
+}
+.left .user{
+	width:100%;
+	height:75px;
+}
+.left .user .cicle{
+	width:47px;
+	height:47px;
+	display:inline-block;
+	background:gray;
+	margin:15px 40px;
+	border-radius:47px;
+	
+}
+.left .user .out_cicle{
+	width:53px;
+	height:53px;
+	border-radius:53px;
+	display:inline-block;
+	border:solid 2px gray;
+	margin:15px 40px;
+	position:relative;
+	top:-85px;
+	left:-5px;
+}
+.left .user .name{
+	display:inline-block;
+	width:70px;
+	height:27px;
+	position:relative;
+	top:-120px;
+	left:-20px;
+}
+.left .info{
+	float:left;
+	width:128px;
+}
+.left .info p{
+	text-align:center;
+}
+.left .collect{
+	border-right:solid 1px;
+}
+.aside_nav{
+	width:100%;
+	height:400px;
+	border:solid 1px red;
+	margin-top:40px;
+}
+.aside_nav ul{
+	width:100%;
+	list-style:none;
+}
+.aside_nav ul li{
+	text-align:center;
+	margin-top:30px;
+}
+.aside_nav ul .single{
+	background:url(images/task_9_baobaio.jpg);
+	background-repeat:no-repeat;
+	background-position:60px;
+}
+.aside_nav ul .star{
+	background:url(images/task_9_star.jpg);
+	background-repeat:no-repeat;
+	background-position:60px;
+}
+.aside_nav ul .share{
+	background:url(images/task_9_share.jpg);
+	background-repeat:no-repeat;
+	background-position:60px;
+}
+.aside_nav ul .acconut{
+	background:url(images/task_9_acoount.jpg);
+	background-repeat:no-repeat;
+	background-position:60px;
+
+}

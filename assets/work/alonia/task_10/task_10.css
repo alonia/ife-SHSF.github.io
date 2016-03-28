@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    border:solid 1px blue;
+    display:flex;
+    background:pink;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+
+  
+}
+.container div{
+    width:150px;
+    margin:10px;
+   border:solid 1px green;
+}
+.first{
+    height:120px;
+    
+
+}
+.second{
+    height:100px;
+  
+
+}.third{
+    height:40px;
+   
+}
+.forth{
+    height:200px;
+  
+}
+@media screen and (max-width: 640px) {
+   .container{
+       display:flex;
+       align-content: flex-start ;
+       flex-wrap:wrap;
+   }
+   .forth{
+       order:-1;
+   }
+}
