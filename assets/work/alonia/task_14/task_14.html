@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+
+  <h3>污染城市列表</h3>
+  <ul id="aqi-list">
+  </ul>
+
+<script type="text/javascript">
+
+var aqiData = [
+  ["北京", 90],//0 1
+  ["上海", 52],//1 1
+  ["福州", 90],
+  ["广州", 70],
+  ["成都", 55],
+  ["西安", 100]
+];//二维数组
+
+
+
+(function () {
+
+  /*
+  在注释下方编写代码
+  遍历读取aqiData中各个城市的数据
+  将空气质量指数大于60的城市显示到aqi-list的列表中
+  */
+
+  //遍历二维数组
+ 
+   /*for(var i=0;i<aqiData.length;i++)
+    {
+     for(var j=0;j<aqiData[i].length;j++)
+     {
+          console.log(aqiData[i]);
+       } 
+    }*/
+
+      //1.筛选出大于60的城市 生成另一个数组array；2.也可使用es6中的filter方法；
+         var array=[];
+         for(var i=0;i<aqiData.length;i++)
+         {
+           if(aqiData[i][1]>60)
+           {
+           array.push(aqiData[i]);
+            //console.log(aqiData[i]);
+            }
+         }
+        /*使用filter方法不会改变原数组，可生成数组；*/
+        /*function isBig(element) { element 为一维数组；
+            return element[1] >60;
+            }
+          var array=aqiData.filter(isBig);*/
+
+
+        function compareNumbers(a, b) 
+          { //a.b 为一维数组的每一个元素
+               return b[1] - a[1];//从大到小进行排序；
+            }
+           array.sort(compareNumbers);//对自己本身进行排序，改变了原数组；
+
+          for(var i=0;i<array.length;i++)
+          {
+             //console.log(aqiData[i]);
+             document.getElementById("aqi-list").innerHTML+="<li>"+"第"+(i+1)+"名是："+array[i][0]+","+array[i][1]+"</li>";
+           }
+         // document.write(aqiData[i][j]);//有两个并列的 按原来位置排；
+    
+
+
+})();
+
+</script>
+</body>
+</html>

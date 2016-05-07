@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>全局变量和局部变量</title>
+	<script type="text/javascript">    
+//当全局变量与局部变量的值相同时
+       var j=0; 
+     function test()
+     {  
+           //这里若是没有var 会被当做全局变量j=1意思就是修改了全局变量的值           
+           j=1;  
+          console.log(j);//1
+     }
+       test();  //1
+      console.log(j);//1 这里的j都为全局变量；
+
+
+
+//当全局变量与局部变量的值相同时
+      var j=0; 
+     function test()
+     {  
+           //这里有var 会被当做重新定义一个j         
+           var j=1;  
+          console.log(j);
+     }
+       test();  //1   这里的j为局部变量
+      console.log(j);//0 这里的j为全局变量；
+
+
+//由于上面的区别，所以当函数调用的先后顺序不一样 结果也不一样，
+
+//全局调换顺序后
+ // test()在后面时
+    var j=0; 
+     function test()
+     {  
+           //这里若是没有var 会被当做全局变量j=1意思就是修改了全局变量的值           
+           j=1;  
+          console.log(j);//1
+     }
+      console.log(j);//0  这里的j都为全局变量；*/
+       test();  //1
+
+
+ //局部调换顺序后：
+   // test()在后面时
+     var j=0; 
+     function test()
+     {  
+                 
+         var  j=1;    //这里有var 会被当做重新定义一个j        
+          console.log(j);//1
+     }
+      console.log(j);//0  这里的j为全局变量；*/
+       test();  //1   // 这里的j为局部变量
+
+     
+
+	</script>
+</head>
+<body>
+	test js 作用域链的测试
+</body>
+</html>

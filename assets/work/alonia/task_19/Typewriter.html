@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>打字机效果</title>
+	
+</head>
+<body onload=change()>
+	 <p>打字机效果</p><input type="button" value="ok" onclick=clean()>
+	<script type="text/javascript">
+	var  inter;
+     var p=document.querySelector("p");
+     function changeCss(){
+     	p.style.color = p.style.color=="red" ? "blue" : "red";
+
+     }
+     function change(){
+     	inter=setInterval(changeCss,500);	
+     	console.log(inter);
+     }
+     function clean(){
+     	clearInterval(inter);
+     }
+      
+	</script>
+</body>
+</html> 
+

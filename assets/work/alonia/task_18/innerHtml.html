@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>测试innerHTML</title>
+</head>
+<body>
+	<div id="div">
+    <span id="span">1</span>
+    </div>
+
+
+	<script type="text/javascript">
+
+      var span=document.getElementById("span");
+      console.log(span);
+      var div=document.getElementById("div");
+      console.log(div);
+      div.innerHTML="<span>"+2+"</span>";
+      //innerHTML的意思是把原来div里的东西换为<span id="span">2</span>
+
+	</script>
+</body>
+</html>

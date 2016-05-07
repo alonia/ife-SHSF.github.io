@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>replace练习</title>
+	<script type="text/javascript">
+     var array=['12c1','n11','c11','1ab1'];
+     function replacetest()
+     {
+         console.log(array);
+          var x=[];
+         for(var i in array)
+         {    
+         	 x.push(array[i].replace(RegExp('1','gi'),"2"));	
+         } 
+         console.log(x);
+     }
+
+/*
+ *
+ *
+ *
+    flags 参数在 v8 内核（Chrome and NodeJs）中不起作用。使用一个带有相应标志（flags）的RegExp 对象来代替此参数
+    在 replace()方法中使用正则直接量
+ */  
+
+  var str = "A area, and a are A";
+      //  var newstr = str.replace("a", "b", "gi");
+     // var newstr = str.replace(/a/gi,"b");//b breb, bnd b bre b 在 replace()方法中使用正则直接量
+      var newstr = str.replace(RegExp('a','gi'),"b");//b breb, bnd b bre b第一个参数是正则对象
+      console.log(newstr); // A brea, and a are A
+
+
+    window.onload=replacetest;
+	</script>
+</head>
+<body>
+	test
+</body>
+</html>

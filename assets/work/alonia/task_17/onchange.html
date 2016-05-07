@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>onchange event</title>
+</head>
+<body>
+	<select id="select">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+	</select>
+	<script type="text/javascript">
+	       function print()
+	       {
+	       	 console.log(1);
+	       }
+          var select=document.getElementById("select");
+          select.addEventListener("change",print);
+//<input>, <select>, 和<textarea>  元素的value由于用户的输入
+	</script>
+</body>
+</html>
